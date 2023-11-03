@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your order</title>
+    
+    <style>
+        body
+        {
+            font-family: 'IBM Plex mono',sans-serif;
+            background-image: linear-gradient(to right, #CCD6A6, #DAE2B6, #F4EAD5, #FFFBE9);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Montserrat:wght@400;700&family=Poppins:wght@300&family=Raleway&display=swap');
+
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: ;
+            opacity: 0.3; */
+           
+            padding: 0px;
+            width: 1000px;
+            height: 600px;
+            border-radius: 10px;
+
+            /* to center the div */
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+        /* button effects */
+
+        .button
+        {
+            height: 60px;
+            width: 600px;
+            border-radius: 5px;
+            border: #DAE2B6;
+            font-family: 'IBM Plex mono',sans-serif;
+            font-size: 20px;
+            background-color: #CCD6A6;
+            
+            box-shadow: 7px 6px 28px 1px rgba(118, 98, 98, 0.24); 
+            cursor: pointer; 
+            outline: none; 
+            transition: 0.2s all; 
+           
+        }
+        .button:active { 
+            transform: scale(0.98); 
+            /* Scaling button to 0.98 to its original size */ 
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+            /* Lowering the shadow */ 
+        } 
+
+
+        .textbox
+        {
+            height: 60px;
+            width: 600px;
+            border-radius: 7px;
+            border: #DAE2B6;
+            opacity: 0.8;
+        }
+
+        .main_heading
+        {
+            font-size: 30px;
+        }
+
+        .company
+        {
+            padding-left: 259px;
+            font-weight: 700;
+            font-size: 30px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        img
+        {
+            height: 100%;
+            width: 25px;
+        }
+
+
+
+        .track
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .textbox placeholder
+        {
+            text-align: center ;
+        }
+
+
+    </style>
+
+
+
+
+
+</head>
+<!-- <a class="company" href="#"><img class="logo" src="abacus-svgrepo-com (1).svg"> InventoryIQ</a> -->
+
+<body>
+    <div class="container">
+    <div class="track">
+       <h2 class="main_heading">Track your order anytime, anywhere!</h2>
+       <input type="text" placeholder="Enter your order ID" class="textbox"><br>
+       <button class="button" onclick="document.location='tracking.html'"><span>Search</span></button>
+    </div>
+    </div>
+</body>
+</html>
